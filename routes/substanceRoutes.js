@@ -6,7 +6,6 @@ const router = express.Router();
 
 router
   .route(`/`)
-  // .get(authController.protect, substanceController.getAllSubstances)
-  .get(substanceController.getAllSubstances)
+  .get(authController.protect, substanceController.getAllSubstances)
 
 module.exports = router;
